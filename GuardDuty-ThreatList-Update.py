@@ -1,6 +1,8 @@
 import boto3
 
-
+ACCESSKEY='<ACCESSKEY>'
+SECRETKEY='<SECRETKEY>'
+detectorid='<detectorid>'
 
 def GuardDuty_ThreatList_Update():
     client = boto3.client('guardduty', region_name="ap-northeast-2", aws_access_key_id=ACCESSKEY, aws_secret_access_key=SECRETKEY)
